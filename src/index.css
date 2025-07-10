@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Roboto", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: #d9d9d9;
+  background-color: #1b1b1b;
+
+  /* CSS Variables for theming */
+  --background: #1b1b1b;
+  --background-second: #2a2a2a;
+  --primary-color: #18202e;
+  --secondary-color: #24303d;
+  --light-text: #d9d9d9;
+  --special: #805bb3;
+  --primary-effect: #0567a8;
+  --secondary-effect: #3ac0db;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}

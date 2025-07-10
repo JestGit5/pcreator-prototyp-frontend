@@ -1,0 +1,362 @@
+/* Poradniki Page Styles */
+.poradniki-page {
+  overflow: hidden;
+  background-color: var(--background, #1b1b1b);
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Content Styles */
+.poradniki-content {
+  margin-top: 8px;
+  width: 100%;
+  overflow: hidden;
+  padding: 8px;
+}
+
+@media (max-width: 991px) {
+  .poradniki-content {
+    max-width: 100%;
+  }
+}
+
+/* Title */
+.poradniki-title-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+  color: var(--light-text, #d9d9d9);
+  text-align: center;
+  justify-content: center;
+  padding: 8px 0;
+  font:
+    400 34px/1 Rubik One,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+@media (max-width: 991px) {
+  .poradniki-title-container {
+    max-width: 100%;
+    font-size: 30px;
+  }
+}
+
+.poradniki-title {
+  color: var(--light-text, #d9d9d9);
+  align-self: stretch;
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .poradniki-title {
+    max-width: 100%;
+    font-size: 30px;
+  }
+}
+
+/* Search Section */
+.poradniki-search-section {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  margin-top: 8px;
+  width: 100%;
+  gap: 8px;
+  overflow: hidden;
+  justify-content: start;
+  flex-wrap: wrap;
+  background-color: var(--background-second, #2a2a2a);
+  padding: 4px 23px;
+}
+
+@media (max-width: 991px) {
+  .poradniki-search-section {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.poradniki-search-input {
+  display: flex;
+  align-items: stretch;
+  border-radius: 8px;
+  align-self: stretch;
+  flex-direction: column;
+  overflow: hidden;
+  color: var(--light-text, #d9d9d9);
+  justify-content: center;
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  background-color: var(--secondary-color, #24303d);
+  margin: auto 0;
+  padding: 8px 15px;
+  font:
+    400 18px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  min-width: 180px;
+}
+
+@media (max-width: 991px) {
+  .poradniki-search-input {
+    max-width: 100%;
+  }
+}
+
+.poradniki-search-placeholder {
+  border-radius: 8px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+  justify-content: start;
+  padding: 4px 8px;
+  color: var(--light-text, #d9d9d9);
+}
+
+@media (max-width: 991px) {
+  .poradniki-search-placeholder {
+    max-width: 100%;
+  }
+}
+
+.poradniki-search-button-container {
+  align-self: stretch;
+  display: flex;
+  min-width: 180px;
+  align-items: center;
+  gap: 30px 38px;
+  overflow: hidden;
+  justify-content: start;
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  margin: auto 0;
+  padding: 8px 15px;
+}
+
+@media (max-width: 991px) {
+  .poradniki-search-button-container {
+    max-width: 100%;
+  }
+}
+
+.poradniki-search-button {
+  display: flex;
+  align-items: stretch;
+  border-radius: 8px;
+  justify-content: start;
+  background-color: var(--special, #805bb3);
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.poradniki-search-button:hover {
+  background-color: #6b4a9e;
+}
+
+.poradniki-search-icon {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+}
+
+.poradniki-search-image {
+  aspect-ratio: 3.03;
+  object-fit: contain;
+  object-position: center;
+  width: 75px;
+  max-width: 100%;
+  flex: 1;
+}
+
+.poradniki-search-text {
+  color: #fff;
+  margin: auto 0;
+  font:
+    600 21px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+/* Articles */
+.poradniki-articles-row {
+  display: flex;
+  margin-top: 8px;
+  width: 100%;
+  align-items: stretch;
+  gap: 15px;
+  overflow: hidden;
+  color: #000;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding: 8px 15px;
+  font:
+    600 21px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+@media (max-width: 991px) {
+  .poradniki-articles-row {
+    max-width: 100%;
+  }
+}
+
+.poradniki-article-card {
+  border-radius: 8px;
+  align-self: start;
+  min-width: 180px;
+  min-height: 420px;
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  background-color: var(--light-text, #d9d9d9);
+  padding: 8px;
+}
+
+@media (max-width: 991px) {
+  .poradniki-article-card {
+    max-width: 100%;
+  }
+}
+
+.poradniki-article-header {
+  border-color: rgba(198, 201, 205, 1);
+  border-bottom-width: 2px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 8px;
+}
+
+@media (max-width: 991px) {
+  .poradniki-article-header {
+    max-width: 100%;
+  }
+}
+
+.poradniki-article-title {
+  align-self: stretch;
+  margin: auto 0;
+  color: #000;
+  font:
+    600 21px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+.poradniki-article-image {
+  aspect-ratio: 2.72;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px 0;
+}
+
+@media (max-width: 991px) {
+  .poradniki-article-image {
+    max-width: 100%;
+  }
+}
+
+.poradniki-article-description-container {
+  border-color: rgba(198, 201, 205, 1);
+  border-bottom-width: 2px;
+  display: flex;
+  margin-top: 8px;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  justify-content: center;
+  flex: 1;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 8px;
+}
+
+@media (max-width: 991px) {
+  .poradniki-article-description-container {
+    max-width: 100%;
+  }
+}
+
+.poradniki-article-description {
+  align-self: stretch;
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  margin: auto 0;
+  color: #000;
+  font:
+    400 18px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+@media (max-width: 991px) {
+  .poradniki-article-description {
+    max-width: 100%;
+  }
+}
+
+.poradniki-article-link-container {
+  display: flex;
+  margin-top: 8px;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  color: #805bb3;
+  justify-content: center;
+}
+
+@media (max-width: 991px) {
+  .poradniki-article-link-container {
+    max-width: 100%;
+  }
+}
+
+.poradniki-article-link {
+  color: #805bb3;
+  font:
+    600 21px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.poradniki-article-link:hover {
+  color: #6b4a9e;
+}

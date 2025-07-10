@@ -1,0 +1,597 @@
+/* CSS Variables */
+:root {
+  --background: #1b1b1b;
+  --primary-color: #18202e;
+  --secondary-color: #24303d;
+  --background-second: #2a2a2a;
+  --light-text: #d9d9d9;
+  --light-text-stun: #b5b5b5;
+  --dark-text: #1a1a1a;
+  --special: #805bb3;
+  --secondary-effect: #3ac0db;
+  --primary-effect: #0567a8;
+}
+
+/* Main page container */
+.rejestracja-page {
+  overflow: hidden;
+  background-color: var(--background);
+}
+
+/* Main content */
+.main-content {
+  display: flex;
+  margin-top: 8px;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: stretch;
+  justify-content: center;
+  flex: 1;
+  padding: 30px;
+}
+
+.registration-container {
+  border-radius: 12px;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--background-second);
+  padding: 40px;
+}
+
+.title-section {
+  display: flex;
+  width: 100%;
+  padding-bottom: 18px;
+  align-items: center;
+  gap: 6px;
+  color: var(--light-text);
+  white-space: nowrap;
+  justify-content: center;
+  font:
+    400 28px/1 Rubik One,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+.page-title {
+  color: var(--light-text);
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.form-content {
+  width: 100%;
+  overflow: hidden;
+  color: rgba(181, 181, 181, 1);
+  text-align: center;
+  padding: 12px;
+  font:
+    600 18px/40px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+.social-login-section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: stretch;
+  color: var(--dark-text);
+  justify-content: center;
+  padding: 6px 120px;
+  margin-bottom: 18px;
+}
+
+.social-login-button {
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  display: flex;
+  width: 100%;
+  gap: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: var(--light-text-stun);
+}
+
+.social-login-button:hover {
+  background-color: #a5a5a5;
+}
+
+.email-login {
+  background-color: var(--light-text-stun);
+}
+
+.google-login {
+  background-color: var(--light-text-stun);
+}
+
+.social-login-text {
+  color: var(--dark-text);
+  align-self: stretch;
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  margin: auto 0;
+  padding: 15px 8px;
+  font:
+    600 22px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+.input-section {
+  display: flex;
+  margin-top: 18px;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: stretch;
+  white-space: nowrap;
+  justify-content: center;
+  padding: 6px 140px;
+}
+
+.input-field {
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  display: flex;
+  width: 100%;
+  gap: 6px;
+  background-color: var(--secondary-color);
+  cursor: text;
+  transition: background-color 0.3s;
+}
+
+.input-field:hover {
+  background-color: #2a3543;
+}
+
+.input-text {
+  align-self: stretch;
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  margin: auto 0;
+  padding: 15px 8px;
+  color: rgba(181, 181, 181, 1);
+  font:
+    600 22px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+.submit-section {
+  margin-top: 24px;
+  width: 100%;
+  overflow: hidden;
+  color: var(--light-text);
+  padding: 24px 300px 8px;
+}
+
+.submit-button {
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  display: flex;
+  width: 100%;
+  gap: 8px;
+  background-color: var(--special);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 15px 8px;
+}
+
+.submit-button:hover {
+  background-color: #6b4a9e;
+}
+
+.submit-text {
+  color: var(--light-text);
+  align-self: stretch;
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  margin: 0;
+  padding: 0;
+  font:
+    600 22px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+/* Footer styles */
+.rejestracja-footer {
+  background-color: rgba(26, 29, 35, 1);
+  display: flex;
+  margin-top: 6px;
+  width: 100%;
+  align-items: stretch;
+  gap: 6px;
+  overflow: hidden;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding: 6px;
+}
+
+.footer-brand-section {
+  display: flex;
+  min-width: 135px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: stretch;
+  color: var(--light-text);
+  justify-content: center;
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 11px;
+  padding: 6px;
+  font:
+    600 16px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+.footer-brand-content {
+  width: 100%;
+  overflow: hidden;
+  padding: 6px;
+}
+
+.footer-logo {
+  aspect-ratio: 2.8;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  padding: 6px 0;
+}
+
+.footer-description-container {
+  display: flex;
+  margin-top: 11px;
+  width: 100%;
+  align-items: start;
+  gap: 6px;
+  justify-content: center;
+}
+
+.footer-description {
+  color: var(--light-text);
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  font:
+    600 16px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+.footer-links-section {
+  min-width: 135px;
+  overflow: hidden;
+  color: var(--secondary-effect);
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 11px;
+  padding: 6px;
+  font:
+    600 16px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+.footer-link-item {
+  display: flex;
+  width: 100%;
+  align-items: start;
+  gap: 6px;
+  white-space: nowrap;
+  justify-content: start;
+  margin-bottom: 17px;
+  cursor: pointer;
+}
+
+.footer-link-text {
+  color: var(--secondary-effect);
+}
+
+.footer-copyright-section {
+  display: flex;
+  margin-top: 17px;
+  width: 100%;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--light-text);
+  font-weight: 400;
+  justify-content: center;
+}
+
+.footer-copyright-text {
+  color: var(--light-text);
+  align-self: stretch;
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  margin: auto 0;
+  font:
+    400 14px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+.footer-menu-section {
+  align-self: start;
+  min-width: 135px;
+  overflow: hidden;
+  color: var(--primary-effect);
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  padding: 6px 11px;
+  font:
+    600 16px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+.footer-menu-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  border-bottom: 1px solid var(--secondary-color);
+  color: var(--light-text);
+  white-space: nowrap;
+  text-align: center;
+  font:
+    400 26px/1 Rubik One,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+.footer-menu-title {
+  color: var(--light-text);
+  align-self: stretch;
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  margin: auto 0;
+}
+
+.footer-menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--secondary-color);
+  margin-top: 6px;
+  width: 100%;
+  gap: 6px;
+  white-space: nowrap;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.footer-menu-item-text {
+  color: var(--primary-effect);
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.footer-social-section {
+  align-self: start;
+  min-width: 135px;
+  min-height: 214px;
+  overflow: hidden;
+  width: 249px;
+  padding: 6px;
+  width: 443px;
+  padding: 10px;
+}
+
+.social-media-item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+  justify-content: flex-start;
+  flex: 1;
+  height: auto;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.social-media-item:hover {
+  transform: translateY(-3px);
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-media-item:active {
+  transform: translateY(-1px);
+}
+
+.social-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.social-media-item:hover .social-icon-wrapper {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: scale(1.1);
+}
+
+.social-icon {
+  aspect-ratio: 1.25;
+  object-fit: contain;
+  object-position: center;
+  width: 60px;
+  height: 48px;
+  max-width: 100%;
+  transition: filter 0.3s ease;
+}
+
+.social-media-item:hover .social-icon {
+  filter: brightness(1.2);
+}
+
+.social-media-text {
+  color: var(--light-text);
+  margin: auto 0;
+  font:
+    600 24px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  transition: color 0.3s ease;
+}
+
+.social-media-item:hover .social-media-text {
+  color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  .social-media-item {
+    max-width: 100%;
+    padding: 12px;
+    gap: 15px;
+  }
+
+  .social-icon-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+
+  .social-icon {
+    width: 50px;
+    height: 40px;
+  }
+
+  .social-media-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .social-icon-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 32px;
+  }
+
+  .social-media-text {
+    font-size: 18px;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 991px) {
+  .main-content {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .registration-container {
+    max-width: 100%;
+    padding: 25px 15px;
+  }
+
+  .page-title {
+    font-size: 24px;
+  }
+
+  .social-login-section {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .input-section {
+    max-width: 100%;
+    white-space: initial;
+    padding: 0 15px;
+  }
+
+  .input-field {
+    max-width: 100%;
+    white-space: initial;
+  }
+
+  .submit-section {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .footer-brand-section {
+    max-width: 100%;
+  }
+
+  .footer-links-section {
+    max-width: 100%;
+  }
+
+  .footer-link-item {
+    white-space: initial;
+  }
+
+  .footer-menu-title {
+    font-size: 23px;
+  }
+
+  .footer-menu-item {
+    white-space: initial;
+  }
+
+  .footer-social-section {
+    max-width: 100%;
+  }
+
+  .social-media-item {
+    max-width: 100%;
+  }
+}

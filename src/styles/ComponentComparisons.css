@@ -1,0 +1,805 @@
+/* Component Comparisons Page Styles */
+.component-comparisons-page {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1b1b1b;
+  overflow: hidden;
+}
+
+.comparisons-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 8px;
+  overflow: hidden;
+  padding: 8px;
+}
+
+@media (max-width: 991px) {
+  .comparisons-content {
+    max-width: 100%;
+  }
+}
+
+/* Title Section */
+.comparisons-title-section {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 6px;
+  color: #d9d9d9;
+  text-align: center;
+  justify-content: center;
+  padding: 6px 0;
+  font:
+    400 26px/1 "Rubik One",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+@media (max-width: 991px) {
+  .comparisons-title-section {
+    max-width: 100%;
+    font-size: 23px;
+  }
+}
+
+.comparisons-page-title {
+  color: #d9d9d9;
+  align-self: stretch;
+  flex: 1;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .comparisons-page-title {
+    max-width: 100%;
+    font-size: 30px;
+  }
+}
+
+.comparisons-page-title-text {
+  color: #d9d9d9;
+  align-self: stretch;
+  flex: 1;
+  margin: auto 0;
+}
+
+/* Search and Filter Section */
+.search-filter-section {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  margin-top: 8px;
+  overflow: hidden;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 4px 23px;
+}
+
+@media (max-width: 991px) {
+  .search-filter-section {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  border-radius: 8px;
+  background-color: #24303d;
+  min-width: 180px;
+  overflow: hidden;
+  color: #d9d9d9;
+  justify-content: center;
+  flex: 1;
+  margin: auto 0;
+  padding: 8px 15px;
+  font:
+    400 18px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+@media (max-width: 991px) {
+  .search-box {
+    max-width: 100%;
+  }
+}
+
+.search-input-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  justify-content: flex-start;
+  padding: 4px 8px;
+}
+
+@media (max-width: 991px) {
+  .search-input-container {
+    max-width: 100%;
+  }
+}
+
+.search-input-text {
+  color: #d9d9d9;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.filter-controls {
+  display: flex;
+  align-self: stretch;
+  min-width: 180px;
+  align-items: center;
+  gap: 30px;
+  overflow: hidden;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 1;
+  margin: auto 0;
+  padding: 8px;
+}
+
+@media (max-width: 991px) {
+  .filter-controls {
+    max-width: 100%;
+    gap: 15px;
+  }
+}
+
+.search-button-container {
+  display: flex;
+  align-self: stretch;
+  align-items: stretch;
+  border-radius: 8px;
+  background-color: #805bb3;
+  gap: 8px;
+  justify-content: flex-start;
+  margin: auto 0;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button-container:hover {
+  background-color: #6b4a9e;
+}
+
+.search-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+}
+
+.search-icon {
+  aspect-ratio: 3.03;
+  object-fit: contain;
+  object-position: center;
+  width: 75px;
+  max-width: 100%;
+  flex: 1;
+}
+
+.search-button-text {
+  color: #fff;
+  margin: auto 0;
+  font:
+    600 21px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+.filter-buttons {
+  display: flex;
+  align-self: stretch;
+  min-width: 180px;
+  align-items: center;
+  gap: 15px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex: 1;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .filter-buttons {
+    max-width: 100%;
+  }
+}
+
+.sort-button-container,
+.filter-button-container {
+  display: flex;
+  border-radius: 8px;
+  align-self: stretch;
+  min-height: 57px;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin: auto 0;
+  padding: 8px 15px;
+}
+
+.sort-icon-wrapper,
+.filter-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: flex-end;
+  justify-content: center;
+  width: 83px;
+}
+
+.sort-icon,
+.filter-icon {
+  aspect-ratio: 1.79;
+  object-fit: contain;
+  object-position: center;
+  width: 75px;
+  max-width: 100%;
+  flex: 1;
+}
+
+.sort-button-text,
+.filter-button-text {
+  color: #fff;
+  margin: auto 0;
+  font:
+    600 21px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+/* Components List */
+.components-list {
+  width: 100%;
+  overflow: hidden;
+  flex: 1;
+  margin-top: 8px;
+  padding: 8px;
+}
+
+@media (max-width: 991px) {
+  .components-list {
+    max-width: 100%;
+  }
+}
+
+.component-row {
+  display: flex;
+  width: 100%;
+  gap: 8px;
+  overflow: hidden;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #2a2a2a;
+  padding: 15px 8px;
+}
+
+@media (max-width: 991px) {
+  .component-row {
+    max-width: 100%;
+  }
+}
+
+.component-preview {
+  display: flex;
+  min-width: 180px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+}
+
+.component-title-section {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: stretch;
+  color: #d9d9d9;
+  white-space: nowrap;
+  text-align: center;
+  justify-content: center;
+  padding: 8px;
+  font:
+    400 27px/1 "Rubik One",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+@media (max-width: 991px) {
+  .component-title-section {
+    white-space: initial;
+  }
+}
+
+.component-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+@media (max-width: 991px) {
+  .component-title {
+    white-space: initial;
+  }
+}
+
+.component-title-text {
+  color: #d9d9d9;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.component-image-container {
+  display: flex;
+  max-width: 100%;
+  width: 165px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 8px;
+}
+
+.component-image {
+  aspect-ratio: 0.91;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  flex: 1;
+  padding: 8px 0;
+}
+
+.component-specs {
+  align-self: flex-start;
+  display: flex;
+  min-width: 180px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: stretch;
+  font-family:
+    Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  justify-content: center;
+  flex: 1;
+  padding: 0 8px;
+}
+
+@media (max-width: 991px) {
+  .component-specs {
+    max-width: 100%;
+  }
+}
+
+.spec-row {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  gap: 23px;
+  overflow: hidden;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0 8px;
+  margin-top: 8px;
+}
+
+.spec-row:first-child {
+  margin-top: 0;
+}
+
+@media (max-width: 991px) {
+  .spec-row {
+    max-width: 100%;
+  }
+}
+
+.spec-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #3ac0db;
+  min-width: 180px;
+  gap: 8px;
+  font-size: 21px;
+  color: #d9d9d9;
+  font-weight: 600;
+  text-align: right;
+  height: 100%;
+  flex: 1;
+  padding: 8px;
+}
+
+@media (max-width: 991px) {
+  .spec-label {
+    max-width: 100%;
+  }
+}
+
+.spec-label-text {
+  color: #d9d9d9;
+  align-self: stretch;
+  flex: 1;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .spec-label-text {
+    max-width: 100%;
+  }
+}
+
+.spec-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #805bb3;
+  min-width: 180px;
+  gap: 8px;
+  font-size: 18px;
+  color: #b5b5b5;
+  font-weight: 400;
+  height: 100%;
+  flex: 1;
+  padding: 8px;
+}
+
+@media (max-width: 991px) {
+  .spec-value {
+    max-width: 100%;
+  }
+}
+
+.spec-value-text {
+  color: #b5b5b5;
+  align-self: stretch;
+  flex: 1;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .spec-value-text {
+    max-width: 100%;
+  }
+}
+
+/* Detailed Comparisons */
+.detailed-comparisons {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 8px;
+  padding: 8px;
+}
+
+@media (max-width: 991px) {
+  .detailed-comparisons {
+    max-width: 100%;
+  }
+}
+
+.comparison-title-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+  color: #d9d9d9;
+  text-align: center;
+  justify-content: center;
+  padding: 0 8px;
+  font:
+    400 34px/1 "Rubik One",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+@media (max-width: 991px) {
+  .comparison-title-container {
+    max-width: 100%;
+    font-size: 30px;
+  }
+}
+
+.comparison-title {
+  align-self: stretch;
+  flex: 1;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .comparison-title {
+    max-width: 100%;
+    font-size: 30px;
+  }
+}
+
+.comparison-product-name {
+  color: #d9d9d9;
+  text-decoration: underline;
+  text-decoration-color: #0567a8;
+}
+
+.comparison-vs {
+  color: #0bda51;
+  text-decoration: underline;
+  text-decoration-color: #0567a8;
+}
+
+.comparison-element {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  border-radius: 15px;
+  width: 100%;
+  gap: 8px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  background-color: #2a2a2a;
+  margin-top: 15px;
+  padding: 15px;
+}
+
+@media (max-width: 991px) {
+  .comparison-element {
+    max-width: 100%;
+  }
+}
+
+.top-comparison {
+  border-right: 4px solid #0567a8;
+  border-bottom: 4px solid #0567a8;
+}
+
+.bottom-comparison {
+  border-top: 4px solid #0567a8;
+  border-left: 4px solid #0567a8;
+}
+
+.comparison-image-box {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: stretch;
+  justify-content: center;
+  flex: 1;
+  padding: 8px;
+}
+
+.comparison-image {
+  aspect-ratio: 0.54;
+  object-fit: contain;
+  object-position: center;
+  width: 141px;
+  padding: 8px 0;
+}
+
+.comparison-specs-container {
+  align-self: flex-start;
+  min-width: 180px;
+  overflow: hidden;
+  font-family:
+    Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  width: 1037px;
+  padding: 8px;
+}
+
+@media (max-width: 991px) {
+  .comparison-specs-container {
+    max-width: 100%;
+  }
+}
+
+.comparison-product-title-container {
+  display: flex;
+  max-width: 100%;
+  width: 1022px;
+  align-items: center;
+  gap: 8px;
+  color: #d9d9d9;
+  text-align: center;
+  justify-content: center;
+  padding: 0 8px;
+  font:
+    400 30px/1 "Rubik One",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+.comparison-product-title {
+  color: #d9d9d9;
+  align-self: stretch;
+  flex: 1;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .comparison-product-title {
+    max-width: 100%;
+  }
+}
+
+.comparison-spec-row {
+  display: flex;
+  margin-top: 8px;
+  width: 100%;
+  max-width: 1022px;
+  align-items: stretch;
+  gap: 23px;
+  overflow: hidden;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0 8px;
+}
+
+@media (max-width: 991px) {
+  .comparison-spec-row {
+    max-width: 100%;
+  }
+}
+
+.comparison-spec-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #3ac0db;
+  min-width: 180px;
+  gap: 8px;
+  font-size: 21px;
+  color: #d9d9d9;
+  font-weight: 600;
+  text-align: right;
+  height: 100%;
+  flex: 1;
+  padding: 8px;
+}
+
+@media (max-width: 991px) {
+  .comparison-spec-label {
+    max-width: 100%;
+  }
+}
+
+.comparison-spec-label-text {
+  color: #d9d9d9;
+  align-self: stretch;
+  flex: 1;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .comparison-spec-label-text {
+    max-width: 100%;
+  }
+}
+
+.comparison-spec-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #805bb3;
+  min-width: 180px;
+  gap: 8px;
+  font-size: 18px;
+  color: #b5b5b5;
+  font-weight: 400;
+  height: 100%;
+  flex: 1;
+  padding: 8px;
+}
+
+@media (max-width: 991px) {
+  .comparison-spec-value {
+    max-width: 100%;
+  }
+}
+
+.comparison-spec-value-text {
+  color: #b5b5b5;
+  align-self: stretch;
+  flex: 1;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .comparison-spec-value-text {
+    max-width: 100%;
+  }
+}
+
+.comparison-score-container {
+  display: flex;
+  margin-top: 8px;
+  max-width: 100%;
+  width: 1022px;
+  align-items: center;
+  gap: 8px;
+  text-align: right;
+  justify-content: center;
+  padding: 0 8px;
+  font:
+    400 24px/1 "Rubik One",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+.comparison-score {
+  align-self: stretch;
+  flex: 1;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .comparison-score {
+    max-width: 100%;
+  }
+}
+
+.comparison-score.winner {
+  color: #0bda51;
+}
+
+.comparison-score.loser {
+  color: #d50000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .comparison-element {
+    flex-direction: column;
+  }
+
+  .comparison-specs-container {
+    width: 100%;
+  }
+
+  .comparison-product-title-container {
+    width: 100%;
+  }
+
+  .comparison-spec-row {
+    width: 100%;
+  }
+
+  .comparison-score-container {
+    width: 100%;
+  }
+}

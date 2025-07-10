@@ -1,0 +1,708 @@
+/* Logowanie Page Styles */
+.logowanie-page {
+  overflow: hidden;
+  background-color: var(--background, #1b1b1b);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar styles are now handled by MainPage.css */
+
+/* Main Content */
+.login-main-content {
+  display: flex;
+  margin-top: 8px;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: stretch;
+  justify-content: center;
+  flex: 1;
+  padding: 30px;
+}
+
+@media (max-width: 991px) {
+  .login-main-content {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.login-container {
+  border-radius: 12px;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--background-second, #2a2a2a);
+  padding: 40px;
+}
+
+@media (max-width: 991px) {
+  .login-container {
+    max-width: 100%;
+    padding: 25px 12px;
+  }
+}
+
+.login-title-section {
+  display: flex;
+  width: 100%;
+  padding-bottom: 18px;
+  align-items: center;
+  gap: 6px;
+  color: var(--light-text, #d9d9d9);
+  white-space: nowrap;
+  justify-content: center;
+  font:
+    400 28px/1 Rubik One,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+@media (max-width: 991px) {
+  .login-title-section {
+    max-width: 100%;
+    font-size: 24px;
+    white-space: initial;
+  }
+}
+
+.login-title {
+  color: var(--light-text, #d9d9d9);
+  align-self: stretch;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .login-title {
+    font-size: 24px;
+  }
+}
+
+.login-form-content {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  padding: 12px;
+  font:
+    600 18px/40px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+@media (max-width: 991px) {
+  .login-form-content {
+    max-width: 100%;
+  }
+}
+
+.login-form-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: stretch;
+  color: var(--dark-text, #1a1a1a);
+  justify-content: center;
+  padding: 6px 120px;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 991px) {
+  .login-form-container {
+    max-width: 100%;
+    padding: 0 12px;
+  }
+}
+
+.login-button {
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  display: flex;
+  width: 100%;
+  gap: 6px;
+  background-color: var(--light-text-stun, #b5b5b5);
+  cursor: pointer;
+}
+.login-button:hover {
+  background-color: #a5a5a5;
+}
+
+@media (max-width: 991px) {
+  .login-button {
+    max-width: 100%;
+  }
+}
+
+.login-button-text {
+  color: var(--dark-text);
+  align-self: stretch;
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  margin: auto 0;
+  padding: 12px 6px;
+}
+
+@media (max-width: 991px) {
+  .login-button-text {
+    max-width: 100%;
+  }
+}
+
+.login-input-container {
+  display: flex;
+  margin-top: 18px;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: stretch;
+  white-space: nowrap;
+  justify-content: center;
+  padding: 6px 140px;
+  color: var(--light-text, #d9d9d9)
+}
+
+@media (max-width: 991px) {
+  .login-input-container {
+    max-width: 100%;
+    white-space: initial;
+    padding: 0 15px;
+  }
+}
+
+.login-input-field {
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  display: flex;
+  width: 100%;
+  gap: 6px;
+  color: rgba(181, 181, 181, 1);
+  white-space: nowrap;
+  background-color: var(--secondary-color, #24303d);
+  cursor: text;
+  transition: background-color 0.3s;
+}
+
+@media (max-width: 991px) {
+  .login-input-field {
+    max-width: 100%;
+    white-space: initial;
+  }
+}
+
+.login-input-field:hover {
+  background-color: #2a3543;
+}
+
+.login-input-text {
+  align-self: stretch;
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  margin: auto 0;
+  padding: 0px 8px;
+  color: rgba(181, 181, 181, 1);
+  font:
+    600 22px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+@media (max-width: 991px) {
+  .login-input-text {
+    max-width: 100%;
+  }
+}
+
+.forgot-password-link {
+  border-radius: 15px;
+  display: flex;
+  margin-top: 8px;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary-effect, #0567a8);
+  justify-content: center;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+@media (max-width: 991px) {
+  .forgot-password-link {
+    max-width: 100%;
+  }
+}
+
+.forgot-password-link:hover {
+  color: #045289;
+}
+
+.forgot-password-text {
+  color: var(--primary-effect, #0567a8);
+  align-self: stretch;
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  margin: auto 0;
+  padding: 6px;
+}
+
+@media (max-width: 991px) {
+  .forgot-password-text {
+    max-width: 100%;
+  }
+}
+
+.login-submit-container {
+  width: 100%;
+  overflow: hidden;
+  color: var(--light-text, #d9d9d9);
+  white-space: initial;
+  padding: 18px 12px 6px;
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+  .login-submit-container {
+    max-width: 100%;
+    white-space: initial;
+    padding: 18px 12px 6px;
+  }
+}
+
+.login-submit-button {
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  display: flex;
+  width: 100%;
+  gap: 6px;
+  background-color: var(--special, #805bb3);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 12px 6px;
+}
+
+@media (max-width: 991px) {
+  .login-submit-button {
+    white-space: initial;
+  }
+}
+
+.login-submit-button:hover {
+  background-color: #6b4a9e;
+}
+
+.login-submit-text {
+  color: var(--light-text, #d9d9d9);
+  align-self: stretch;
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  margin: 0;
+  padding: 0;
+  font:
+    600 22px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  text-align: center;
+}
+
+/* Footer */
+.logowanie-footer {
+  background-color: rgba(26, 29, 35, 1);
+  display: flex;
+  margin-top: 6px;
+  width: 100%;
+  align-items: stretch;
+  gap: 6px;
+  overflow: hidden;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding: 6px;
+}
+
+@media (max-width: 991px) {
+  .logowanie-footer {
+    max-width: 100%;
+    flex-direction: column;
+  }
+}
+
+.footer-brand-section {
+  display: flex;
+  min-width: 135px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: stretch;
+  color: var(--light-text, #d9d9d9);
+  justify-content: center;
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 11px;
+  padding: 6px;
+  font:
+    600 16px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+@media (max-width: 991px) {
+  .footer-brand-section {
+    max-width: 100%;
+  }
+}
+
+.footer-brand-content {
+  width: 100%;
+  overflow: hidden;
+  padding: 6px;
+}
+
+.footer-logo {
+  aspect-ratio: 2.8;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  padding: 6px 0;
+}
+
+.footer-description-container {
+  display: flex;
+  margin-top: 11px;
+  width: 100%;
+  align-items: start;
+  gap: 6px;
+  justify-content: center;
+}
+
+.footer-description {
+  color: var(--light-text, #d9d9d9);
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  font:
+    600 16px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+.footer-links-section {
+  min-width: 135px;
+  overflow: hidden;
+  color: var(--secondary-effect);
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 11px;
+  padding: 6px;
+  font:
+    600 16px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+@media (max-width: 991px) {
+  .footer-links-section {
+    max-width: 100%;
+  }
+}
+
+.footer-link-item {
+  display: flex;
+  width: 100%;
+  align-items: start;
+  gap: 6px;
+  white-space: nowrap;
+  justify-content: start;
+  margin-bottom: 17px;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .footer-link-item {
+    white-space: initial;
+  }
+}
+
+.footer-link-text {
+  color: var(--secondary-effect);
+  transition: color 0.3s;
+}
+
+.footer-link-text:hover {
+  color: #2da8c4;
+}
+
+.footer-copyright-section {
+  display: flex;
+  margin-top: 17px;
+  width: 100%;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--light-text);
+  font-weight: 400;
+  justify-content: center;
+}
+
+.footer-copyright-text {
+  color: var(--light-text);
+  align-self: stretch;
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  margin: auto 0;
+  font:
+    400 14px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+.footer-menu-section {
+  align-self: start;
+  min-width: 135px;
+  overflow: hidden;
+  color: var(--primary-effect);
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  padding: 6px 11px;
+  font:
+    600 16px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+@media (max-width: 991px) {
+  .footer-menu-section {
+    max-width: 100%;
+  }
+}
+
+.footer-menu-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  border-bottom: 1px solid var(--secondary-color);
+  color: var(--light-text);
+  white-space: nowrap;
+  text-align: center;
+  font:
+    400 26px/1 Rubik One,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+@media (max-width: 991px) {
+  .footer-menu-title-container {
+    font-size: 23px;
+    white-space: initial;
+  }
+}
+
+.footer-menu-title {
+  color: var(--light-text);
+  align-self: stretch;
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .footer-menu-title {
+    font-size: 23px;
+  }
+}
+
+.footer-menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--secondary-color);
+  margin-top: 6px;
+  width: 100%;
+  gap: 6px;
+  white-space: nowrap;
+  padding: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .footer-menu-item {
+    white-space: initial;
+  }
+}
+
+.footer-menu-item-text {
+  color: var(--primary-effect);
+  align-self: stretch;
+  margin: auto 0;
+  transition: color 0.3s;
+}
+
+.footer-menu-item-text:hover {
+  color: #045289;
+}
+
+.footer-social-section {
+  align-self: start;
+  min-width: 135px;
+  min-height: 214px;
+  overflow: hidden;
+  width: 249px;
+  padding: 6px;
+}
+
+@media (max-width: 991px) {
+  .footer-social-section {
+    max-width: 100%;
+    width: 100%;
+    min-height: auto;
+  }
+}
+
+.social-item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 11px;
+  overflow: hidden;
+  justify-content: flex-start;
+  flex: 1;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: transparent;
+}
+
+.social-item:hover {
+  transform: translateY(-3px);
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-item:active {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 991px) {
+  .social-item {
+    max-width: 100%;
+    padding: 7px;
+    gap: 8px;
+  }
+}
+
+.social-item + .social-item {
+  margin-top: 11px;
+}
+
+.social-icon-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  padding: 4px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.social-item:hover .social-icon-container {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: scale(1.1);
+}
+
+.social-icon {
+  aspect-ratio: 1.25;
+  object-fit: contain;
+  object-position: center;
+  width: 34px;
+  height: 27px;
+  max-width: 100%;
+  transition: filter 0.3s ease;
+}
+
+.social-item:hover .social-icon {
+  filter: brightness(1.2);
+}
+
+.social-text {
+  color: var(--light-text, #d9d9d9);
+  margin: auto 0;
+  font:
+    600 18px Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  transition: color 0.3s ease;
+}
+
+.social-item:hover .social-text {
+  color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  .social-icon-container {
+    width: 53px;
+    height: 53px;
+  }
+
+  .social-icon {
+    width: 38px;
+    height: 30px;
+  }
+
+  .social-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 640px) {
+  .social-icon-container {
+    width: 45px;
+    height: 45px;
+  }
+
+  .social-icon {
+    width: 30px;
+    height: 24px;
+  }
+
+  .social-text {
+    font-size: 14px;
+  }
+}

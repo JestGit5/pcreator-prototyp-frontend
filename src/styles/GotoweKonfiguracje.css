@@ -1,0 +1,420 @@
+/* Gotowe Konfiguracje Page Styles */
+.gotowe-konfiguracje-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #1b1b1b;
+}
+
+.gotowe-content {
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1;
+  width: 100%;
+}
+
+/* Title Section */
+.gotowe-title-container {
+  display: flex;
+  padding: 8px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .gotowe-title-container {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 640px) {
+  .gotowe-title-container {
+    font-size: 21px;
+    line-height: 21px;
+  }
+}
+
+.gotowe-title {
+  flex: 1;
+  color: #d9d9d9;
+  text-align: center;
+  font: 400 34px/34px "Rubik One";
+}
+
+@media (max-width: 991px) {
+  .gotowe-title {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 640px) {
+  .gotowe-title {
+    font-size: 21px;
+    line-height: 21px;
+  }
+}
+
+/* Search Container */
+.search-container {
+  display: flex;
+  padding: 4px 23px;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+}
+
+@media (max-width: 991px) {
+  .search-container {
+    flex-direction: column;
+    gap: 11px;
+    padding: 11px;
+  }
+}
+
+@media (max-width: 640px) {
+  .search-container {
+    padding: 8px;
+  }
+}
+
+.search-input-section {
+  display: flex;
+  padding: 8px 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1;
+  border-radius: 8px;
+  background-color: #24303d;
+}
+
+.search-description-container {
+  display: flex;
+  padding: 4px 8px;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+@media (max-width: 640px) {
+  .search-description-container {
+    font-size: 14px;
+  }
+}
+
+.search-description {
+  color: #d9d9d9;
+  font: 400 18px Roboto;
+}
+
+@media (max-width: 640px) {
+  .search-description {
+    font-size: 14px;
+  }
+}
+
+.search-button-section {
+  display: flex;
+  padding: 8px 15px;
+  align-items: center;
+  gap: 38px;
+  flex: 1;
+}
+
+@media (max-width: 991px) {
+  .search-button-section {
+    gap: 15px;
+    padding: 8px;
+    width: 100%;
+  }
+}
+
+.search-button-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+@media (max-width: 991px) {
+  .search-button-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.search-btn {
+  display: flex;
+  padding: 8px 15px;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #805bb3;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+  background-color: #6b4a9e;
+}
+
+@media (max-width: 991px) {
+  .search-btn {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+.search-icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+
+.search-icon {
+  display: flex;
+  width: 75px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1;
+}
+
+@media (max-width: 640px) {
+  .search-icon {
+    width: 45px;
+  }
+}
+
+.search-btn-text {
+  color: #fff;
+  font: 600 21px Roboto;
+}
+
+@media (max-width: 991px) {
+  .search-btn-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .search-btn-text {
+    font-size: 15px;
+  }
+}
+
+/* Configuration List */
+.configuration-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+}
+
+.configuration-item {
+  display: flex;
+  padding: 8px 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+  background-color: #24303d;
+  border-radius: 8px;
+}
+
+.config-item-content {
+  display: flex;
+  padding: 8px;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .config-item-content {
+    flex-direction: column;
+  }
+}
+
+.config-image-section {
+  display: flex;
+  padding: 8px;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1;
+  align-self: stretch;
+}
+
+@media (max-width: 991px) {
+  .config-image-section {
+    flex-direction: column;
+  }
+}
+
+.config-item-image {
+  display: flex;
+  width: 581px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+}
+
+@media (max-width: 991px) {
+  .config-item-image {
+    width: 100%;
+    max-width: 375px;
+  }
+}
+
+@media (max-width: 640px) {
+  .config-item-image {
+    width: 100%;
+  }
+}
+
+.config-info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1;
+}
+
+.config-item-title-container {
+  display: flex;
+  padding: 15px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .config-item-title-container {
+    font-size: 26px;
+    line-height: 26px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .config-item-title-container {
+    font-size: 21px;
+    line-height: 21px;
+  }
+}
+
+.config-item-title {
+  flex: 1;
+  color: #d9d9d9;
+  text-align: center;
+  font: 400 34px/34px "Rubik One";
+}
+
+@media (max-width: 991px) {
+  .config-item-title {
+    font-size: 26px;
+    line-height: 26px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .config-item-title {
+    font-size: 21px;
+    line-height: 21px;
+  }
+}
+
+.config-item-description-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .config-item-description-container {
+    font-size: 14px;
+  }
+}
+
+.config-item-description {
+  flex: 1;
+  color: #d9d9d9;
+  text-align: center;
+  font: 400 18px Roboto;
+  line-height: 1.5;
+}
+
+@media (max-width: 991px) {
+  .config-item-description {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .config-item-description {
+    font-size: 14px;
+  }
+}
+
+.config-item-cta-container {
+  display: flex;
+  padding: 0px 23px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .config-item-cta-container {
+    font-size: 18px;
+  }
+}
+
+.config-item-cta {
+  flex: 1;
+  color: #805bb3;
+  text-align: right;
+  font: 600 24px Roboto;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.config-item-cta:hover {
+  color: #6b4a9e;
+}
+
+@media (max-width: 991px) {
+  .config-item-cta {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .config-item-cta {
+    font-size: 18px;
+  }
+}
